@@ -7,6 +7,14 @@
 #    Avg. Defense: [VALUE]
 # ======= END SUMMARY =======
 
+"cat pokemon .dat | grep -v Legendary=1 | wc -l" =M
+"cat pokemon.dat | cut 1,2,3,4,5,7,8,9,10,11,12,13 | sort median| wc -l" =B
+"cat pokemon.dat | cut 1,2,3,4,5,6,7,9,10,11,12,13 | sort median |wc -l" =c
+echo "Total Non-Legendary Pokemon: ["A"]"
+echo "Avg. HP: ["B"]"
+echo "Avg. Defense: ["c"]"
+#Note I did not finish and some labels are place holders.
+
 # NOTE THAT YOU MUST USE AWK OR YOU WILL LOSE POINTS
 # The "Avg." values should be calculated as mean values for the corresponding columns.
 # The averages must only be for non-legendary pokemon.
